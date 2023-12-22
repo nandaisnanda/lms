@@ -1,6 +1,6 @@
-import { Sidebar } from "./sidebar";
-
-const DashboardLayout =  (
+import { Sidebarnav }  from "./_components/sidebarnav";
+import { Header }  from "./_components/header";
+const DashboardLayout = (
     {
         children 
     }: {
@@ -8,11 +8,14 @@ const DashboardLayout =  (
     }
 ) => {
     return (
-        <div className="h-full">
-            <div className="hidden md:flex h-full w-80 flex-col fixed inset-y-0 z-60">
-                <Sidebar />
+        <div>
+            <div className="h-ful w-80 flex-col fixed inset-y-0 z-50">
+            <Sidebarnav />
             </div>
+        <Header />
+        <div className="ml-80 p-5 ">
         {children}
+        </div>
         </div>
     );
 }
