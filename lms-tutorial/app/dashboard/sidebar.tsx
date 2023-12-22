@@ -5,6 +5,7 @@ export const Sidebar = () => {
             <div className="p-10">
             <Logo />
             </div>
+
         </div>
     )
 }
